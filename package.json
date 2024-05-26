@@ -1,0 +1,28 @@
+{
+  "name": "learn-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "buildHtml": "npm run build && cp -r ./src/app/pages ./dist/app",
+    "test": "npm run build && jest",
+    "healthcheck": "npm run build && node ./dist/app/healthcheck.js",
+    "start": "npm run build && npm run buildHtml && electron ./dist/app/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/winston": "^2.4.4",
+    "typescript": "^5.4.5",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.12",
+    "electron": "^30.0.8",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.3"
+  }
+}
