@@ -1,7 +1,7 @@
 {
   "name": "learn-electron",
   "version": "1.0.0",
-  "description": "",
+  "description": "Electron App for Learning and Educational Projects",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -10,7 +10,7 @@
     "healthcheck": "npm run build && node ./dist/app/healthcheck.js",
     "start": "npm run build && npm run buildHtml && electron ./dist/app/app.js"
   },
-  "author": "",
+  "author": "Emilio Resende",
   "license": "ISC",
   "dependencies": {
     "@types/winston": "^2.4.4",
